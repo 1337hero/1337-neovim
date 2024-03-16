@@ -12,9 +12,25 @@ opt.smartcase = true
 opt.cursorline = true
 opt.backspace = "indent,eol,start"
 opt.clipboard:append("unnamedplus")
+opt.termguicolors = true
 opt.splitright = true
 opt.splitbelow = true
+
 opt.swapfile = false
+opt.foldcolumn = "0"
+opt.foldlevel = 99
+opt.foldlevelstart = 99
+opt.foldenable = true
+
+opt.guicursor = {
+	"n-v-c:block", -- Normal, visual, command-line: block cursor
+	"i-ci-ve:ver25", -- Insert, command-line insert, visual-exclude: vertical bar cursor with 25% width
+	"r-cr:hor20", -- Replace, command-line replace: horizontal bar cursor with 20% height
+	"o:hor50", -- Operator-pending: horizontal bar cursor with 50% height
+	"a:blinkwait700-blinkoff400-blinkon250", -- All modes: blinking settings
+	"sm:block-blinkwait175-blinkoff150-blinkon175", -- Showmatch: block cursor with specific blinking settings
+}
+
 
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "

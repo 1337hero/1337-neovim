@@ -12,6 +12,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("vim-options")
+
 require("lazy").setup({
   spec = {
     { import = "plugins" },
@@ -20,3 +21,10 @@ require("lazy").setup({
     lazy = false, -- plugins are not lazy loaded by default
   },
 })
+require("format_on_save")
+require("resize_windows")
+require("rotate_windows")
+require("harpoon.mark")
+require("harpoon.ui")
+require("keymap_utils")
+require("keymaps")
