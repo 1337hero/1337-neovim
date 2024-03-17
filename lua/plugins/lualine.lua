@@ -2,7 +2,6 @@ return {
 	"nvim-lualine/lualine.nvim",
 	event = "VeryLazy",
 	config = function()
-		local harpoon = require("harpoon.mark")
 
 		local function truncate_branch_name(branch)
 			if not branch or branch == "" then

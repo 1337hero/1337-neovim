@@ -5,13 +5,14 @@ if not vim.loop.fs_stat(lazypath) then
     "clone",
     "--filter=blob:none",
     "https://github.com/folke/lazy.nvim.git",
-    "--branch=stable",
+    "--branch=stable", -- latest stable release
     lazypath,
   })
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("vim-options")
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
 
 require("lazy").setup({
   spec = {
@@ -21,10 +22,6 @@ require("lazy").setup({
     lazy = false, -- plugins are not lazy loaded by default
   },
 })
-require("format_on_save")
-require("resize_windows")
-require("rotate_windows")
-require("harpoon.mark")
-require("harpoon.ui")
-require("keymap_utils")
-require("keymaps")
+
+require("keymappings")
+require("vim-options")

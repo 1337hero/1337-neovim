@@ -1,3 +1,13 @@
+-- return {
+--   {
+--     "folke/tokyonight.nvim",
+--     lazy = false,
+--     priority = 1000,
+--     opts = {
+--     },
+--   }
+-- }
+
 function ColorMyPencils(color)
 	color = color or "monokai-pro"
 	vim.cmd.colorscheme(color)
