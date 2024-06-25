@@ -28,9 +28,9 @@ return {
             ensure_installed = {
                 "lua_ls",
                 "html",
-                "eslint",
                 "jsonls",
                 "tsserver",
+                "eslint",
                 "astro",
                 "cssls",
                 "yamlls",

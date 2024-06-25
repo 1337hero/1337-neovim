@@ -9,17 +9,31 @@
 -- }
 return {
 {
-    "folke/tokyonight.nvim",
+    "catppuccin/nvim",
+
+    name = "catppuccin",
+    --"folke/tokyonight.nvim",
     --"rebelot/kanagawa.nvim",
 
     lazy = false,
     priority = 1000,
 
     opts = {
-        -- custom options here
+       integrations = {
+        cmp = true,
+        gitsigns = true,
+        neotree = true,
+        treesitter = true,
+        harpoon = true,
+        notify = false,
+        mini = {
+            enabled = true,
+            indentscope_color = "",
+        },
+      }
     },
     config = function()
-        vim.cmd [[colorscheme tokyonight-night]]
+        vim.cmd [[colorscheme catppuccin-macchiato]]
     end,
 }
 }

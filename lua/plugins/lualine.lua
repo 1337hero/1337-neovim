@@ -40,7 +40,8 @@ return {
 				globalstatus = true,
 				component_separators = { left = "", right = "" },
 				section_separators = { left = "█", right = "█" },
-			},
+			  theme = "catppuccin",
+      },
 			sections = {
 				lualine_b = {
 					{ "branch", icon = "", fmt = truncate_branch_name },
